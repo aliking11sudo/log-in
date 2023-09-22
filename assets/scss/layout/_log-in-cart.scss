@@ -1,0 +1,35 @@
+.container__body {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    width: 100%;
+    border: 0;
+}
+
+.container__body :nth-child(2) {
+    animation: move-in-right .4s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+.container__body :nth-child(4) {
+    animation: move-in-left .4s ease-out .75s;
+    animation-fill-mode: backwards;
+    text-decoration: line-through;
+}
+.container {
+    background-color: $color-black-container;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    margin-top: -10rem;
+    border: .2rem;
+    height: auto;
+    border-style: solid;
+    position: relative;
+    align-items: center;
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    overflow: hidden;
+}

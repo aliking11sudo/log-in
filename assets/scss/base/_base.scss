@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
+
+@media screen and (max-width: 572px) {
+    .container {
+        width: 30rem;
+        padding: 2rem;
+
+    }
+
+    .glitch {
+        font-size: 20rem;
+    }
+}

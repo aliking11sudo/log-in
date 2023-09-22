@@ -1,0 +1,73 @@
+body {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: $color-white;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  background-image: linear-gradient(to left bottom, $color-primary-dark, $color-primary-light);
+  padding: 3rem;
+}
+
+.glitch {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 4.2rem;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: .3rem;
+  z-index: 1;
+}
+
+.social {
+  margin-top: 3rem;
+  display: flex;
+}
+
+.social div {
+  
+  width: 15rem;
+  border-radius: .3rem;
+  padding: .5rem 1rem 1rem .5rem;
+  background-color: rgba(255, 255, 255, 0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+
+@media screen and (max-width: 572px) {
+  body {
+    font-size: 1.4rem;
+    overflow-x: hidden;
+    padding: 0;
+  }
+
+  .social div {
+    width: 8rem;
+  }
+}
+.fa-google{
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: .5rem;
+  background-color: #fff;
+  color: red;
+}
+.fa-facebook{
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: .5rem;
+  background-color: blue;
+  color: #fff;
+}
+.fa-lock{
+  padding-right: 1rem;
+}
+.fa-user{
+  padding-right: 1rem;
+}

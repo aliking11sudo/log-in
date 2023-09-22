@@ -1,0 +1,48 @@
+.glitch-wrapper {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.glitch {
+
+   &:before,
+   &:after {
+      display: block;
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.8;
+   }
+
+   &:before {
+      animation-delay: 4s;
+      animation: glitch-it 0.3s both infinite;
+      color: #00FFFF;
+      z-index: -1;
+   }
+
+   &:after {
+      animation-delay: 4s;
+      animation: glitch-it 0.3s reverse both infinite;
+      color: #FF00FF;
+      z-index: -2;
+   }
+}
+
+.social div:hover {
+   cursor: pointer;
+   background-color: rgba(255, 255, 255, 0.47);
+}
+
+.social .fb {
+   margin-left: 2.5rem;
+}
+
+.social i {
+   margin-right: .4rem;
+}
